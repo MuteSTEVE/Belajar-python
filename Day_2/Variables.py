@@ -40,8 +40,10 @@ floor_division = num_one // num_two     #VII
 
 ## Exercise 5 level 2
 radius = int(input("Input the radius of the circle: "))
-area = math.pi * (radius ** 2)
-print(f"The are of the circle is: {area}")                             # I
+area_of_circle = math.pi * (radius ** 2)
+circum_of_circle = math.pi * 2 * radius
+print(f"The area of the circle is: {area_of_circle}")
+print(f"The circum of the circle is: {circum_of_circle}")
 
 ## Exercise 6 
 name = str(input("Input your name: "))
