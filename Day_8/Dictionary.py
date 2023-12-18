@@ -60,3 +60,4 @@ print("-----------------------------------")
 # 10. Delete one of the items in the dictionary
 student.pop()
 print(student)
+print("-----------------------------------")
