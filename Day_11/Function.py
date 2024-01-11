@@ -17,7 +17,7 @@ def add_all_nums(*nums):
     n = 0
     for num in nums:
         if not isinstance(num, str):
-            return f"{num} is not an number!"
+            print(f"{num} is not an number!")
             continue
         n += num
     return n
@@ -145,5 +145,13 @@ def is_unique(lst):
         print(i)
 
 # 4. Write a function which checks if all the items of the list are of the same data type.
-def is_same_data_type(num):
-    data_type = []
+def is_same_data_type(lst):
+    for i in range(len(lst)):
+        for j in range(i, len(lst)):
+            if type(lst[j]) == type(lst[i]):
+                print(f"{lst[j]} and {lst[i]} are the same data type")
+
+# 5. Go to the data folder and access the countries-data.py file.
+# - Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
+# - Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
+
