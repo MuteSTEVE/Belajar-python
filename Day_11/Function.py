@@ -124,6 +124,7 @@ def evens_and_odds(nums):
 nums = 12456789 # Dummy value
 even, odd = evens_and_odds(nums)
 
+
 # 2. Write a function called is_prime, which checks if a number is prime.
 def is_prime(num):
     for i in range(2,num):
@@ -134,15 +135,11 @@ def is_prime(num):
 
 # 3. Write a functions which checks if all items are unique in the list.
 def is_unique(lst):
-    unique_list = []
     duplicate_list = []
     for i in lst:
-        if i not in unique_list:
-            unique_list.append(i)
-        elif i not in duplicate_list:
+        if i not in duplicate_list:
             duplicate_list.append(i)
-    for i in unique_list:
-        print(i)
+    return duplicate_list
 
 # 4. Write a function which checks if all the items of the list are of the same data type.
 def is_same_data_type(lst):
@@ -154,4 +151,3 @@ def is_same_data_type(lst):
 # 5. Go to the data folder and access the countries-data.py file.
 # - Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
 # - Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
-
