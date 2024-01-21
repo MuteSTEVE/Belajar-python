@@ -58,12 +58,10 @@ def shuffle_list(lst):
 def array_random():
     length = 7
     random_array = [random.randint(0, 9) for _ in range(length)]
-    unique = []
-    for i in random_array:
-        if i not in unique:
-            unique.append(i)
+    unique_set = set(random_array)
 
-    while len(unique) != length:
-        unique.append(random.randint(0, 9))
+    while len(unique_set) < length:
+        unique_set.add(random.randint(0, 9))
+    unique_list = list(unique_set)
 
-    return unique
+    return unique_list
